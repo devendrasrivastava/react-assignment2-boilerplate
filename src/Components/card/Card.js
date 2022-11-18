@@ -1,9 +1,10 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import Header from '../header/Header';
+import './Card.css'
 
 export default function Card(props) {
-    
+
     const navigate = useNavigate();  //variable to protect the page
 
     const saveNews = () => {
@@ -16,31 +17,36 @@ export default function Card(props) {
 
 
     useEffect(() => {                                         //coding start to protect the page
-        fetch("http://localhost:9000/auth/isAuthenticated",{
-           method:"POST",
-           headers:{
-               "Authorization":`Bearer ${localStorage.getItem("jwt_token")}`
-           }
+        fetch("http://localhost:9000/auth/isAuthenticated", {
+            method: "POST",
+            headers: {
+                "Authorization": `Bearer ${localStorage.getItem("jwt_token")}`
+            }
         })
-        .then(res=>res.json())
-        .then(data=>{
-           console.log(data);
-           // if(data.status===401){
-           //     navigate("/login")
-           // }
-   
-           if(!data.isAuthenticated){
-               navigate("/login")
-           }
-        })
-       }, [])
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                // if(data.status===401){
+                //     navigate("/login")
+                // }
+
+                if (!data.isAuthenticated) {
+                    navigate("/login")
+                }
+            })
+    }, [])
 
 
     return (
-        
-        
-        <div className="container my-4">
-            <div className="card" style={{ width: "18rem" }}>
+
+
+        <div>
+
+            <div className="container my-4 ">
+                <div className="row">
+                    <div className="col-12 col-md-5">
+
+            <div className="card user-card">
                 <img src={props.urlToImage} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
@@ -51,7 +57,11 @@ export default function Card(props) {
                     }}>Read Later</button>
                 </div>
             </div>
+            </div>
+            </div>
+            </div>
+
         </div>
-        
+
     )
 }
