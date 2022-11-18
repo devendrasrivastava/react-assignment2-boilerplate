@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react'
+import './ReadNow.css'
 // import { NavItem } from 'react-bootstrap'
 
 export default function ReadNow() {
@@ -17,7 +18,7 @@ export default function ReadNow() {
   
 
   return (
-    <div className="container">
+    <div className="container user-Readnow mx-auto">
     <div className="row">
         {
             news.map(item=><div className="card" style={{width: "18rem"}}>
