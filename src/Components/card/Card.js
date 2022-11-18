@@ -44,7 +44,7 @@ export default function Card(props) {
 
             <div className="container my-4 ">
                 <div className="row">
-                    <div className="col-12 col-md-5">
+                    <div className="col-12 col-md-4">
 
             <div className="card user-card">
                 <img src={props.urlToImage} className="card-img-top" alt="..." />

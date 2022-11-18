@@ -23,8 +23,10 @@ class App extends React.Component {
       <Routes>
         <Route path="/card" element={<Card/>}/>
 
-
+        
         <Route path="/" element={<Dashboad/>}/>
+
+
         <Route path="/registraion" element={<Registration/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/readnow" element={<ReadNow/>}/>

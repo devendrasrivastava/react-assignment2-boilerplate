@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-primary user-header">
+      <nav className="navbar navbar-expand-lg bg-primary fixed-top user-header">
         <div className="container-fluid">
 
 
