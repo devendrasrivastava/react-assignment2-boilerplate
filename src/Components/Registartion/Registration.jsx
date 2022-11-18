@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../header/Header'
+import './Registration.css'
 
 export default function Registration() {
     return (
@@ -9,7 +10,7 @@ export default function Registration() {
         
         <div>
 
-            <div className="container">
+            <div className="container user-registration">
                 <form className="row g-3">
                     <div className="col-md-8">
                         <label for="validationServer01" className="form-label">Name</label>
