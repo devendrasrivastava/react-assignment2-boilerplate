@@ -20,8 +20,13 @@ class App extends React.Component {
       <BrowserRouter>
       
       <Header/>
+<<<<<<< HEAD
         <Routes>
         <Route path="/card" element={<Card/>}/>
+=======
+      <Routes>
+        <Route path="/card" element={<Card/>}/>    
+>>>>>>> d886955d325b0ad74f05f7cbb55c9af1d15d65c8
         <Route path="/" element={<Dashboad/>}/>
         <Route path="/registraion" element={<Registration/>}/>
         <Route path="/login" element={<Login/>}/>
