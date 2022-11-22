@@ -46,12 +46,10 @@ export default function Login() {
             
         })
     })
+
+
   return (
-    <>
-    {/* <Header/> */}
-    
-    
-    <div className="container user-login">
+        <div className="container user-login">
         
         <div className="row">
             <div className="col-md-4 offset-md-4">
@@ -80,6 +78,5 @@ export default function Login() {
             </div>
         </div>
     </div>
-    </>
   )
 }

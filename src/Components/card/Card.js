@@ -41,11 +41,6 @@ export default function Card(props) {
 
 
         <div>
-
-            <div className="container my-4 ">
-                <div className="row">
-                    <div className="col-12 col-md-4">
-
             <div className="card user-card">
                 <img src={props.urlToImage} className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -57,10 +52,6 @@ export default function Card(props) {
                     }}>Read Later</button>
                 </div>
             </div>
-            </div>
-            </div>
-            </div>
-
         </div>
 
     )
