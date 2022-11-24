@@ -49,6 +49,19 @@ export default function Header() {
                       <Link className="nav-link active" to="/readnow">Read Now</Link>
                     </li>
 
+
+                    <li className="nav-item">
+                      <Link className="nav-link active" to="/business">Business</Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link className="nav-link active" to="/sports">Sports</Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link className="nav-link active" to="/entertainment">Entertainment</Link>
+                    </li>
+
                   </ul>
                 </>
 

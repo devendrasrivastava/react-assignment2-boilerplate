@@ -10,6 +10,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Registration from './Components/Registartion/Registration';
 import Login from './Components/Login/Login';
 import ReadNow from './Components/ReadNow/ReadNow';
+import Business from './Components/Filter/Business';
+import Sports from './Components/Filter/Sports';
+import Entertainment from './Components/Filter/Entertainment';
 
 
 class App extends React.Component {
@@ -20,17 +23,15 @@ class App extends React.Component {
       <BrowserRouter>
       
       <Header/>
-<<<<<<< HEAD
         <Routes>
         <Route path="/card" element={<Card/>}/>
-=======
-      <Routes>
-        <Route path="/card" element={<Card/>}/>    
->>>>>>> d886955d325b0ad74f05f7cbb55c9af1d15d65c8
         <Route path="/" element={<Dashboad/>}/>
         <Route path="/registraion" element={<Registration/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/readnow" element={<ReadNow/>}/>
+        <Route path="/business" element={<Business/>}/>
+        <Route path="/sports" element={<Sports/>}/>
+        <Route path="/entertainment" element={<Entertainment/>}/>
      
       </Routes>
       <Footer/>
